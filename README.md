@@ -18,6 +18,8 @@ A full-stack Online Judge built with the MERN stack. Supports C, C++, and Python
 
 ## Architecture
 
+![Architecture Diagram](architecture.svg)
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                        Browser                          │

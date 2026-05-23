@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0f"/>
+      <stop offset="100%" style="stop-color:#1a1a1c"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8333a"/>
+      <stop offset="100%" style="stop-color:#c62828"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b8a3"/>
+      <stop offset="100%" style="stop-color:#009688"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glowRed">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#e8333a" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#555"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e8333a"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00b8a3"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="url(#bgGrad)" rx="16"/>
+  <rect width="900" height="620" fill="none" stroke="#3a3a3e" stroke-width="1" rx="16"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#eff1f6" letter-spacing="0.5">AlgoUniversity — Online Judge Architecture</text>
+  <rect x="160" y="46" width="580" height="2" rx="1" fill="url(#redGrad)" opacity="0.6"/>
+
+  <!-- ══════════════ BROWSER BOX ══════════════ -->
+  <rect x="30" y="68" width="260" height="260" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="68" width="260" height="38" rx="14" fill="url(#redGrad)" filter="url(#glowRed)"/>
+  <rect x="30" y="92" width="260" height="14" fill="url(#redGrad)"/>
+  <text x="160" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">BROWSER / FRONTEND</text>
+  <text x="160" y="107" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">React 18 + Vite  •  port 5173</text>
+
+  <!-- Pages list -->
+  <text x="50" y="134" font-size="10" fill="#8b8b96" font-weight="600" letter-spacing="1">PAGES</text>
+  <rect x="50" y="140" width="220" height="22" rx="6" fill="#252528"/>
+  <text x="60" y="155" font-size="11" fill="#eff1f6">Problem List</text>
+  <text x="175" y="155" font-size="10" fill="#8b8b96">GET /api/problems</text>
+
+  <rect x="50" y="167" width="220" height="22" rx="6" fill="#252528"/>
+  <text x="60" y="182" font-size="11" fill="#eff1f6">Problem Detail + Editor</text>
+  <text x="195" y="182" font-size="10" fill="#e8333a">submit</text>
+
+  <rect x="50" y="194" width="220" height="22" rx="6" fill="#252528"/>
+  <text x="60" y="209" font-size="11" fill="#eff1f6">Leaderboard</text>
+  <text x="60" y="222" font-size="10" fill="#8b8b96">Rankings  •  Recent Submissions</text>
+
+  <rect x="50" y="229" width="105" height="22" rx="6" fill="#252528"/>
+  <text x="60" y="244" font-size="11" fill="#eff1f6">Login</text>
+
+  <rect x="165" y="229" width="105" height="22" rx="6" fill="#252528"/>
+  <text x="175" y="244" font-size="11" fill="#eff1f6">Signup</text>
+
+  <rect x="50" y="257" width="220" height="22" rx="6" fill="#252528"/>
+  <text x="60" y="272" font-size="11" fill="#eff1f6">Submission Detail</text>
+  <text x="170" y="272" font-size="10" fill="#00b8a3">AC / WA / TLE</text>
+
+  <!-- Auth Context tag -->
+  <rect x="50" y="295" width="100" height="20" rx="5" fill="#1e1e2e" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="100" y="309" text-anchor="middle" font-size="10" fill="#8b5cf6">AuthContext</text>
+  <rect x="162" y="295" width="108" height="20" rx="5" fill="#1e1e2e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="216" y="309" text-anchor="middle" font-size="10" fill="#3b82f6">api.js (fetch wrap)</text>
+
+  <!-- ══════════════ ARROW: Browser → Backend ══════════════ -->
+  <line x1="291" y1="185" x2="349" y2="185" stroke="#e8333a" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowRed)"/>
+  <text x="320" y="177" text-anchor="middle" font-size="9" fill="#e8333a">HTTP</text>
+  <text x="320" y="188" text-anchor="middle" font-size="9" fill="#e8333a">/api/*</text>
+
+  <!-- Return arrow -->
+  <line x1="349" y1="198" x2="291" y2="198" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <text x="320" y="210" text-anchor="middle" font-size="9" fill="#555">JSON</text>
+
+  <!-- ══════════════ BACKEND BOX ══════════════ -->
+  <rect x="355" y="68" width="240" height="260" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="355" y="68" width="240" height="38" rx="14" fill="url(#blueGrad)"/>
+  <rect x="355" y="92" width="240" height="14" fill="url(#blueGrad)"/>
+  <text x="475" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">EXPRESS BACKEND</text>
+  <text x="475" y="107" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">Node.js ES Modules  •  port 5000</text>
+
+  <!-- Routes -->
+  <text x="375" y="134" font-size="10" fill="#8b8b96" font-weight="600" letter-spacing="1">ROUTES</text>
+
+  <rect x="375" y="140" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="153" font-size="10" fill="#8b8b96">POST</text>
+  <text x="415" y="153" font-size="10.5" fill="#eff1f6">/auth/register  /auth/login</text>
+
+  <rect x="375" y="162" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="175" font-size="10" fill="#00b8a3">GET </text>
+  <text x="415" y="175" font-size="10.5" fill="#eff1f6">/problems</text>
+
+  <rect x="375" y="184" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="197" font-size="10" fill="#00b8a3">GET </text>
+  <text x="415" y="197" font-size="10.5" fill="#eff1f6">/problems/:id</text>
+
+  <rect x="375" y="206" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="219" font-size="10" fill="#e8333a">POST</text>
+  <text x="415" y="219" font-size="10.5" fill="#eff1f6">/problems/:id/submit</text>
+
+  <rect x="375" y="228" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="241" font-size="10" fill="#00b8a3">GET </text>
+  <text x="415" y="241" font-size="10.5" fill="#eff1f6">/submissions/:id</text>
+
+  <rect x="375" y="250" width="200" height="18" rx="5" fill="#252528"/>
+  <text x="385" y="263" font-size="10" fill="#00b8a3">GET </text>
+  <text x="415" y="263" font-size="10.5" fill="#eff1f6">/leaderboard</text>
+
+  <!-- Middleware tag -->
+  <rect x="375" y="278" width="90" height="20" rx="5" fill="#1e1e2e" stroke="#ffb800" stroke-width="1"/>
+  <text x="420" y="292" text-anchor="middle" font-size="10" fill="#ffb800">JWT Middleware</text>
+  <rect x="475" y="278" width="100" height="20" rx="5" fill="#1e1e2e" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="525" y="292" text-anchor="middle" font-size="10" fill="#8b5cf6">bcryptjs  •  cors</text>
+
+  <!-- ══════════════ ARROW: Backend → MongoDB ══════════════ -->
+  <line x1="475" y1="329" x2="475" y2="379" stroke="#00b8a3" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="490" y="360" font-size="9" fill="#00b8a3">Mongoose</text>
+
+  <!-- Return arrow -->
+  <line x1="461" y1="379" x2="461" y2="329" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+
+  <!-- ══════════════ ARROW: Backend → Evaluator ══════════════ -->
+  <line x1="596" y1="220" x2="644" y2="220" stroke="#e8333a" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="620" y="213" text-anchor="middle" font-size="9" fill="#e8333a">evaluate()</text>
+
+  <!-- Return arrow -->
+  <line x1="644" y1="233" x2="596" y2="233" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <text x="620" y="245" text-anchor="middle" font-size="9" fill="#555">verdict</text>
+
+  <!-- ══════════════ EVALUATOR BOX ══════════════ -->
+  <rect x="650" y="68" width="220" height="260" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="650" y="68" width="220" height="38" rx="14" fill="url(#purpleGrad)"/>
+  <rect x="650" y="92" width="220" height="14" fill="url(#purpleGrad)"/>
+  <text x="760" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">CODE EVALUATOR</text>
+  <text x="760" y="107" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">evaluator/index.js</text>
+
+  <!-- Docker section -->
+  <rect x="668" y="120" width="184" height="110" rx="8" fill="#252528" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="760" y="137" text-anchor="middle" font-size="10" fill="#8b5cf6" font-weight="600">DOCKER  (oj-gcc container)</text>
+  <text x="760" y="153" text-anchor="middle" font-size="10" fill="#8b8b96">C / C++ only</text>
+
+  <rect x="678" y="158" width="164" height="18" rx="5" fill="#1a1a1c"/>
+  <text x="760" y="171" text-anchor="middle" font-size="10" fill="#eff1f6">docker cp → compile → run</text>
+
+  <rect x="678" y="180" width="164" height="18" rx="5" fill="#1a1a1c"/>
+  <text x="760" y="193" text-anchor="middle" font-size="10" fill="#eff1f6">Isolated filesystem</text>
+
+  <rect x="678" y="202" width="164" height="18" rx="5" fill="#1a1a1c"/>
+  <text x="760" y="215" text-anchor="middle" font-size="10" fill="#ffb800">5s timeout → TLE (SIGTERM)</text>
+
+  <!-- Python section -->
+  <rect x="668" y="238" width="184" height="55" rx="8" fill="#252528" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="760" y="255" text-anchor="middle" font-size="10" fill="#3b82f6" font-weight="600">LOCAL (Python)</text>
+  <text x="760" y="270" text-anchor="middle" font-size="10" fill="#8b8b96">spawnSync python3</text>
+  <text x="760" y="284" text-anchor="middle" font-size="10" fill="#ffb800">5s timeout → TLE</text>
+
+  <!-- Verdicts -->
+  <text x="670" y="312" font-size="10" fill="#8b8b96" font-weight="600" letter-spacing="1">VERDICTS</text>
+  <rect x="670" y="318" width="35" height="18" rx="4" fill="#00b8a3" opacity="0.2" stroke="#00b8a3" stroke-width="1"/>
+  <text x="687" y="331" text-anchor="middle" font-size="10" fill="#00b8a3" font-weight="700">AC</text>
+  <rect x="710" y="318" width="35" height="18" rx="4" fill="#ef4743" opacity="0.2" stroke="#ef4743" stroke-width="1"/>
+  <text x="727" y="331" text-anchor="middle" font-size="10" fill="#ef4743" font-weight="700">WA</text>
+  <rect x="750" y="318" width="35" height="18" rx="4" fill="#ffb800" opacity="0.2" stroke="#ffb800" stroke-width="1"/>
+  <text x="767" y="331" text-anchor="middle" font-size="10" fill="#ffb800" font-weight="700">TLE</text>
+  <rect x="790" y="318" width="35" height="18" rx="4" fill="#60a5fa" opacity="0.2" stroke="#60a5fa" stroke-width="1"/>
+  <text x="807" y="331" text-anchor="middle" font-size="10" fill="#60a5fa" font-weight="700">CE</text>
+  <rect x="830" y="318" width="30" height="18" rx="4" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="845" y="331" text-anchor="middle" font-size="10" fill="#8b5cf6" font-weight="700">RE</text>
+
+  <!-- ══════════════ MONGODB BOX ══════════════ -->
+  <rect x="270" y="385" width="410" height="200" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="270" y="385" width="410" height="38" rx="14" fill="url(#greenGrad)"/>
+  <rect x="270" y="409" width="410" height="14" fill="url(#greenGrad)"/>
+  <text x="475" y="409" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MONGODB</text>
+  <text x="475" y="424" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">3 Collections  •  Mongoose ODM</text>
+
+  <!-- users collection -->
+  <rect x="290" y="440" width="110" height="125" rx="8" fill="#252528" stroke="#3b82f6" stroke-width="1"/>
+  <text x="345" y="457" text-anchor="middle" font-size="11" fill="#3b82f6" font-weight="700">users</text>
+  <line x1="295" y1="462" x2="395" y2="462" stroke="#3a3a3e" stroke-width="1"/>
+  <text x="300" y="476" font-size="10" fill="#8b8b96">_id</text>
+  <text x="300" y="491" font-size="10" fill="#eff1f6">username</text>
+  <text x="300" y="506" font-size="10" fill="#eff1f6">password</text>
+  <text x="300" y="521" font-size="10" fill="#8b8b96" font-style="italic">bcrypt hash</text>
+  <rect x="300" y="527" width="90" height="16" rx="4" fill="#1e1e2e" stroke="#3b82f6" stroke-width="0.5"/>
+  <text x="345" y="539" text-anchor="middle" font-size="9" fill="#3b82f6">JWT signed on login</text>
+
+  <!-- problems collection -->
+  <rect x="415" y="440" width="110" height="125" rx="8" fill="#252528" stroke="#00b8a3" stroke-width="1"/>
+  <text x="470" y="457" text-anchor="middle" font-size="11" fill="#00b8a3" font-weight="700">problems</text>
+  <line x1="420" y1="462" x2="520" y2="462" stroke="#3a3a3e" stroke-width="1"/>
+  <text x="425" y="476" font-size="10" fill="#8b8b96">_id</text>
+  <text x="425" y="491" font-size="10" fill="#eff1f6">code, name</text>
+  <text x="425" y="506" font-size="10" fill="#eff1f6">difficulty</text>
+  <text x="425" y="521" font-size="10" fill="#eff1f6">statement</text>
+  <rect x="425" y="527" width="90" height="16" rx="4" fill="#1e1e2e" stroke="#00b8a3" stroke-width="0.5"/>
+  <text x="470" y="539" text-anchor="middle" font-size="9" fill="#00b8a3">testCases[ ] embedded</text>
+
+  <!-- solutions collection -->
+  <rect x="540" y="440" width="120" height="125" rx="8" fill="#252528" stroke="#e8333a" stroke-width="1"/>
+  <text x="600" y="457" text-anchor="middle" font-size="11" fill="#e8333a" font-weight="700">solutions</text>
+  <line x1="545" y1="462" x2="655" y2="462" stroke="#3a3a3e" stroke-width="1"/>
+  <text x="550" y="476" font-size="10" fill="#8b8b96">_id</text>
+  <text x="550" y="491" font-size="10" fill="#eff1f6">→ user  →  problem</text>
+  <text x="550" y="506" font-size="10" fill="#eff1f6">code, language</text>
+  <text x="550" y="521" font-size="10" fill="#eff1f6">verdict, testResults</text>
+  <rect x="550" y="527" width="110" height="16" rx="4" fill="#1e1e2e" stroke="#e8333a" stroke-width="0.5"/>
+  <text x="605" y="539" text-anchor="middle" font-size="9" fill="#e8333a">leaderboard aggregation</text>
+
+  <!-- ══════════════ LEADERBOARD SCORING ══════════════ -->
+  <rect x="30" y="385" width="220" height="200" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="385" width="220" height="38" rx="14" fill="#252528" stroke="#ffb800" stroke-width="1.5"/>
+  <text x="140" y="407" text-anchor="middle" font-size="12" font-weight="700" fill="#ffb800">LEADERBOARD SCORING</text>
+
+  <text x="50" y="440" font-size="11" fill="#8b8b96">Difficulty</text>
+  <text x="175" y="440" text-anchor="middle" font-size="11" fill="#8b8b96">Points</text>
+
+  <rect x="50" y="447" width="180" height="24" rx="6" fill="#252528"/>
+  <rect x="52" y="449" width="4" height="20" rx="2" fill="#00b8a3"/>
+  <text x="65" y="464" font-size="12" fill="#00b8a3" font-weight="600">Easy</text>
+  <text x="220" y="464" text-anchor="end" font-size="14" fill="#eff1f6" font-weight="700">× 1</text>
+
+  <rect x="50" y="476" width="180" height="24" rx="6" fill="#252528"/>
+  <rect x="52" y="478" width="4" height="20" rx="2" fill="#ffb800"/>
+  <text x="65" y="493" font-size="12" fill="#ffb800" font-weight="600">Medium</text>
+  <text x="220" y="493" text-anchor="end" font-size="14" fill="#eff1f6" font-weight="700">× 3</text>
+
+  <rect x="50" y="505" width="180" height="24" rx="6" fill="#252528"/>
+  <rect x="52" y="507" width="4" height="20" rx="2" fill="#ef4743"/>
+  <text x="65" y="522" font-size="12" fill="#ef4743" font-weight="600">Hard</text>
+  <text x="220" y="522" text-anchor="end" font-size="14" fill="#eff1f6" font-weight="700">× 5</text>
+
+  <rect x="50" y="540" width="180" height="30" rx="6" fill="#1e1e2e" stroke="#ffb800" stroke-width="1"/>
+  <text x="140" y="552" text-anchor="middle" font-size="9" fill="#ffb800">Re-submissions don't count</text>
+  <text x="140" y="564" text-anchor="middle" font-size="9" fill="#8b8b96">1st AC per problem only</text>
+
+  <!-- ══════════════ AUTH FLOW NOTE ══════════════ -->
+  <rect x="690" y="385" width="180" height="200" rx="14" fill="#1a1a1c" stroke="#3a3a3e" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="690" y="385" width="180" height="38" rx="14" fill="#252528" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="780" y="407" text-anchor="middle" font-size="12" font-weight="700" fill="#8b5cf6">AUTH FLOW</text>
+
+  <text x="700" y="442" font-size="10" fill="#8b8b96">1. Register / Login</text>
+  <text x="700" y="458" font-size="10" fill="#eff1f6">   → backend returns JWT</text>
+  <text x="700" y="476" font-size="10" fill="#8b8b96">2. Frontend stores</text>
+  <text x="700" y="491" font-size="10" fill="#eff1f6">   → localStorage</text>
+  <text x="700" y="509" font-size="10" fill="#8b8b96">3. Every request sends</text>
+  <text x="700" y="524" font-size="10" fill="#eff1f6">   Authorization: Bearer</text>
+  <text x="700" y="542" font-size="10" fill="#8b8b96">4. Token expires → 401</text>
+  <text x="700" y="557" font-size="10" fill="#eff1f6">   → auth:expired event</text>
+  <text x="700" y="572" font-size="10" fill="#eff1f6">   → auto logout</text>
+
+  <!-- Footer -->
+  <text x="450" y="608" text-anchor="middle" font-size="10" fill="#3a3a3e">AlgoUniversity Online Judge  •  MERN Stack  •  2025</text>
+</svg>
